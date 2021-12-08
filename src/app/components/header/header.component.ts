@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  toggleMenu = false;
+  toggleSearch = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openToggleMenu() {
+    this.toggleMenu = !this.toggleMenu;
+    this.toggleSearch = false;
+  }  
+
+  openToggleSearch() {
+    this.toggleMenu = false;
+    this.toggleSearch = !this.toggleSearch;
+  }
+
+  closeToggle() {
+    this.toggleMenu = false;
+    this.toggleSearch = false;
   }
 
 }
