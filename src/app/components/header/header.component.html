@@ -1,4 +1,4 @@
-<header class="header" (window:scroll)="closeToggle()">
+<header class="header" (window:onclick)="closeToggle()">
 
     <a href="#" class="logo">
         <img src="assets/images/logo.png" alt="">
@@ -19,7 +19,7 @@
 
     <div class="search-form" [ngClass]="{active: toggleSearch}">
         <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
+        <button for="search-box" class="fas fa-search"></button>
     </div>
 
     <div class="cart-items-container"></div>
