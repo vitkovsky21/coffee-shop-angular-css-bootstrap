@@ -1,1 +1,19 @@
-<p>menu works!</p>
+<section class="menu" id="menu">
+
+    <!-- didn't use heading anymore -->
+    <h1 class="heading"> our <span>menu</span> </h1> 
+
+    <div class="main-container">
+      <div class="box-container" *ngFor="let product of products; let i = index">
+
+        <div class="box" >
+            <img src="{{product.image}}" alt="" >
+            <h3>{{product.title}}</h3>
+            <div class="price">{{product.price}} <span>20.99</span></div>
+            <button class="btn special">Add To Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+</section>
