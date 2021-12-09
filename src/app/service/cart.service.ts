@@ -45,6 +45,7 @@ export class CartService {
  
   removeCartItem(item: any) {
       this.cartItemList.splice(this.cartItemList.indexOf(item), 1)
+      this.itemList.next(this.cartItemList)
   }
 
   removeAllCart() {
