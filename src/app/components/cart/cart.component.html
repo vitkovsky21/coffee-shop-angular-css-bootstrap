@@ -1,1 +1,38 @@
-<p>cart works!</p>
+<ng-container>
+    <section class="card-menu" id="menu">
+
+        <h1 class="heading"> Cart <span>Menu</span> </h1>
+
+        <div class="table-responsive">
+           <table class="table caption-top">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Price</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let item of items; let i = index">
+              <tr>
+                <th scope="row">{{i+1}}</th>
+                <td>{{item.title}}</td>
+                <td>{{item.price}}</td>
+                <td>
+                    <button type="button" class="btn" (click)="removeItem(item)"><i class="fas fa-trash-alt"></i></button>
+                </td>
+              </tr>
+            </tbody>
+            <tr>
+              <td colspan="4"></td>
+              <td><button (click)="emptyCart()" class="btn-danger">Empty Cart</button></td>
+              <td><button routerLink="/menu" class="btn-primary">Shop More</button></td>
+              <td><button class="btn-success">Checkout</button></td>
+              <td><strong>Grand Total: ${{grandTotal}}</strong></td>
+            </tr>
+          </table>
+        </div> 
+    
+    
+    </section>
+</ng-container>

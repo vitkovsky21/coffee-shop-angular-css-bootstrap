@@ -1,0 +1,38 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+
+.card {
+    height: 60vh;
+    margin: 25px;
+    padding: 250px 25px;
+}
+
+i {
+    color: #eee;
+    background-color: #eee;
+}
+
+.table {
+    color: #eee;
+    font-size: 200%;
+}
+
+td {
+    padding-top: 2rem;
+}
+
+th {
+    padding-top: 2rem;
+}
+
+i {
+    background-color: var(--main-color);
+}
+
+button {
+    margin-top: -2rem;
+}

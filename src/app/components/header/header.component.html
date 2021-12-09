@@ -13,7 +13,14 @@
 
     <div class="icons">
         <div class="fas fa-search" id="search-btn" (click)="openToggleSearch()"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn" routerLink="cart"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn" routerLink="cart">
+            <div style="font-size: 9px;
+                        position: relative;
+                        right: 19px;" 
+                 class="badge bg-danger"
+                 >{{cart.cartItemList.length}}
+            </div>
+        </div>
         <div class="fas fa-bars" id="menu-btn" (click)="openToggleMenu()"></div>
     </div>
 

@@ -2,9 +2,9 @@ export class Product {
     id: number;
     image: any;
     title: string;
-    price: string;
+    price: number;
 
-    constructor(id: number, image: any, title: string, price: string) {
+    constructor(id: number, image: any, title: string, price: number) {
         this.id = id;
         this.image = image;
         this.title = title;

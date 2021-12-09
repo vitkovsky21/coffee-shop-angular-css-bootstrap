@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ export class HeaderComponent implements OnInit {
   toggleMenu = false;
   toggleSearch = false;
 
-  constructor() { }
+  constructor(public cart: CartService) { }
 
   ngOnInit(): void {
   }
