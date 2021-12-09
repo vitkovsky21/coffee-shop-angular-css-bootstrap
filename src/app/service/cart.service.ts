@@ -33,14 +33,19 @@ export class CartService {
       return grandTotal;
   }
   
+ // removeCartItem(item: any) {
+ //     this.cartItemList.map((a: any, index: any) => {
+ //         if (item.id === a.id) {
+ //             this.cartItemList.splice(index, 1)
+ //         }
+ //     })
+ //     this.itemList.next(this.cartItemList)
+ //   }
+
+ 
   removeCartItem(item: any) {
-      this.cartItemList.map((a: any, index: any) => {
-          if (item.id === a.id) {
-              this.cartItemList.splice(index, 1)
-          }
-      })
-      this.itemList.next(this.cartItemList)
-    }
+      this.cartItemList.splice(this.cartItemList.indexOf(item), 1)
+  }
 
   removeAllCart() {
       this.cartItemList = []
