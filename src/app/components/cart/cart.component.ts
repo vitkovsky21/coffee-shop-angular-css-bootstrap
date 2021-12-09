@@ -28,4 +28,8 @@ export class CartComponent implements OnInit {
   emptyCart() {
     this.cartService.removeAllCart();
   }
+
+  checkoutAlert() {
+    alert("Thanks for purchasing some coffee!")
+  }
 }

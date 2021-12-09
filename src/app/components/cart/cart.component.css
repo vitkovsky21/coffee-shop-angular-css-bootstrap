@@ -21,8 +21,20 @@ i {
     font-size: 200%;
 }
 
+tr td {
+    position: relative;
+    padding-left: 1rem;
+}
+
 td {
     padding-top: 2rem;
+}
+
+td strong {
+    font-size: 125%;
+    color: #fff;
+    position: relative;
+    bottom: .5rem;
 }
 
 th {
@@ -35,4 +47,30 @@ i {
 
 button {
     margin-top: -2rem;
+    border-radius: 1rem;
+    font-size: 100%;
+    padding: .9rem 1rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+    .t {
+        font-size: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .table {
+        font-size: 100%;
+    }
+
 }

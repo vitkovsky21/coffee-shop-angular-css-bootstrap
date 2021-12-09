@@ -14,7 +14,7 @@
               </tr>
             </thead>
             <tbody *ngFor="let item of items; let i = index">
-              <tr>
+              <tr class="cart-product">
                 <th scope="row">{{i+1}}</th>
                 <td>{{item.title}}</td>
                 <td>{{item.price}}</td>
@@ -23,14 +23,16 @@
                 </td>
               </tr>
             </tbody>
-            <tr>
+          </table>
+          <tbody>
+            <tr class="buttons">
               <td colspan="4"></td>
               <td><button (click)="emptyCart()" class="btn-danger">Empty Cart</button></td>
               <td><button routerLink="/menu" class="btn-primary">Shop More</button></td>
-              <td><button class="btn-success">Checkout</button></td>
+              <td><button (click)="checkoutAlert()" class="btn-success">Checkout</button></td>
               <td><strong>Grand Total: ${{grandTotal}}</strong></td>
             </tr>
-          </table>
+          </tbody>
         </div> 
     
     
