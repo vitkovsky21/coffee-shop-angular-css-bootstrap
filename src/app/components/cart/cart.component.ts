@@ -31,5 +31,6 @@ export class CartComponent implements OnInit {
 
   checkoutAlert() {
     alert("Thanks for purchasing some coffee!")
+    this.cartService.removeAllCart();
   }
 }
